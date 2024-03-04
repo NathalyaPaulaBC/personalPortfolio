@@ -1,0 +1,26 @@
+header {
+  padding: 30px 0;
+}
+
+.imgProfilo {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 3px #ffe5e5 solid;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.positionImg {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  border-bottom: 3px #ffe5e5 solid;
+  position: absolute;
+  height: 210px;
+  width: 100%;
+  z-index: -10;
+}

@@ -1,0 +1,50 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row info-dados">
+          <label *ngIf="tipo=='PA'"> My password is </label>
+          <label *ngIf="tipo=='NU'"> My number is </label>
+          <label *ngIf="tipo=='AD'"> My address is </label>
+          <label *ngIf="tipo=='BI'"> My birthday is </label>
+          <label *ngIf="tipo=='EM'"> My email address is </label>
+          <label *ngIf="tipo=='NA'"> My name is </label>
+        </div>
+        <div class="row info-profile">
+          <label *ngIf="tipo=='PA'"> 1234 </label>
+          <label *ngIf="tipo=='NU'"> +39 3484050668 </label>
+          <label *ngIf="tipo=='AD'"> Vigevano (PV) - Italy </label>
+          <label *ngIf="tipo=='BI'"> 20/12/1991 </label>
+          <label *ngIf="tipo=='EM'"> natthypaulaborges@gmail.com </label>
+          <label *ngIf="tipo=='NA'"> Nathalya Paula Borges de Carvalho </label>
+        </div>
+      </div>
+    </div>
+    <div class="row cmd-icon">
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('NA')">
+        <fa-icon size="2x" [icon]="faUser" class="btIcon"></fa-icon>
+      </div>
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('EM')">
+        <fa-icon size="2x" [icon]="faEnvelope" class="btIcon"></fa-icon>
+      </div>
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('BI')">
+        <fa-icon size="2x" [icon]="faCalendarDay" class="btIcon"></fa-icon>
+      </div>
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('AD')">
+        <fa-icon size="2x" [icon]="faMap" class="btIcon"></fa-icon>
+      </div>
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('NU')">
+        <fa-icon size="2x" [icon]="faPhone" class="btIcon"></fa-icon>
+      </div>
+      <div class="col-sm-2 iconContainer" (mouseover)="setValue('PA')">
+        <fa-icon size="2x" [icon]="faLock" class="btIcon"></fa-icon>
+      </div>
+    </div>
+    <div class="row setDados">
+      <h4>Dati caricati dal endpoint: <b>https://randomuser.me/api</b> </h4>
+      <label>
+        {{result | json}}
+      </label>
+    </div>
+  </div>
+</section>

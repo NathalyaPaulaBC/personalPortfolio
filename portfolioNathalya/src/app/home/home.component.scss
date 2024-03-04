@@ -1,0 +1,45 @@
+.cmd-icon div {
+  margin-top: 40px;
+  padding: 5px;
+  height: 50px;
+}
+
+.cmd-icon div:hover {
+  cursor: pointer;
+}
+
+.info-dados {
+  font-size: 25px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.info-profile {
+  font-size: 35px;
+  color: #000000;
+  text-align: center;
+}
+
+.btIcon {
+  color: #8c8c8c;
+}
+
+.btIcon:hover {
+  transform: scale(0.7);
+  color:  #00b300;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.setDados {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.setDados h4 {
+  text-align: center;
+}

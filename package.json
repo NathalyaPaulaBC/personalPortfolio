@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/natthypaulaborges/portfolio.git"
+  },
+  "author": "Nathalya Paula Borges de Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/natthypaulaborges/portfolio/issues"
+  },
+  "homepage": "https://gitlab.com/natthypaulaborges/portfolio#readme",
+  "dependencies": {
+    "@angular/cli": "^12.2.10",
+    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "bootstrap": "^4.6.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
